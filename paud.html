@@ -1,0 +1,515 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>PAUD Bahrul Ulum | Yayasan Saudatul Jamilah As Syuja'iyah</title>
+
+  <meta name="description" content="Profil PAUD Bahrul Ulum di bawah naungan Yayasan Saudatul Jamilah As Syuja'iyah.">
+
+  <style>
+
+    :root {
+      --hijau-tua: #0b5132;
+      --hijau: #147a4b;
+      --hijau-muda: #eaf7ef;
+      --emas: #c99b3b;
+      --putih: #ffffff;
+      --gelap: #18352a;
+      --abu: #66736d;
+      --bg: #f7faf8;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      background: var(--bg);
+      color: var(--gelap);
+      line-height: 1.7;
+    }
+
+    a {
+      text-decoration: none;
+    }
+
+    header {
+      background: var(--hijau-tua);
+      color: white;
+    }
+
+    .navbar {
+      max-width: 1100px;
+      margin: auto;
+      padding: 15px 20px;
+
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 20px;
+    }
+
+    .brand {
+      color: white;
+      font-weight: bold;
+      font-size: 16px;
+    }
+
+    nav {
+      display: flex;
+      gap: 18px;
+      flex-wrap: wrap;
+    }
+
+    nav a {
+      color: white;
+      font-size: 14px;
+    }
+
+    nav a:hover {
+      color: #f1d48a;
+    }
+
+    .hero {
+      background:
+        linear-gradient(
+          rgba(11,81,50,0.92),
+          rgba(20,122,75,0.90)
+        );
+
+      color: white;
+      text-align: center;
+      padding: 90px 20px;
+    }
+
+    .hero-icon {
+      font-size: 60px;
+      margin-bottom: 15px;
+    }
+
+    .hero h1 {
+      font-size: 42px;
+      margin-bottom: 10px;
+    }
+
+    .hero p {
+      max-width: 700px;
+      margin: auto;
+      font-size: 17px;
+    }
+
+    .back {
+      display: inline-block;
+      margin-top: 25px;
+      padding: 10px 20px;
+      border: 1px solid white;
+      color: white;
+      border-radius: 7px;
+    }
+
+    section {
+      padding: 65px 20px;
+    }
+
+    .container {
+      max-width: 1050px;
+      margin: auto;
+    }
+
+    .title {
+      text-align: center;
+      margin-bottom: 35px;
+    }
+
+    .title small {
+      color: var(--hijau);
+      font-weight: bold;
+      text-transform: uppercase;
+    }
+
+    .title h2 {
+      color: var(--hijau-tua);
+      font-size: 30px;
+      margin-top: 5px;
+    }
+
+    .content {
+      max-width: 850px;
+      margin: auto;
+    }
+
+    .content p {
+      color: var(--abu);
+      margin-bottom: 15px;
+    }
+
+    .box {
+      background: white;
+      padding: 30px;
+      border-radius: 12px;
+      box-shadow: 0 5px 20px rgba(0,0,0,0.07);
+      margin-bottom: 25px;
+    }
+
+    .box h3 {
+      color: var(--hijau-tua);
+      margin-bottom: 12px;
+    }
+
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+    }
+
+    .card {
+      background: white;
+      padding: 28px 20px;
+      border-radius: 12px;
+      text-align: center;
+      box-shadow: 0 5px 20px rgba(0,0,0,0.06);
+    }
+
+    .card-icon {
+      font-size: 38px;
+      margin-bottom: 10px;
+    }
+
+    .card h3 {
+      color: var(--hijau-tua);
+      margin-bottom: 8px;
+    }
+
+    .card p {
+      color: var(--abu);
+      font-size: 14px;
+    }
+
+    .info {
+      background: var(--hijau-muda);
+    }
+
+    .contact {
+      background: var(--hijau-tua);
+      color: white;
+      text-align: center;
+    }
+
+    .contact h2 {
+      color: white;
+      margin-bottom: 15px;
+    }
+
+    .contact p {
+      color: rgba(255,255,255,0.85);
+      margin-bottom: 8px;
+    }
+
+    .wa {
+      display: inline-block;
+      margin-top: 20px;
+      background: #25d366;
+      color: white;
+      padding: 12px 22px;
+      border-radius: 7px;
+      font-weight: bold;
+    }
+
+    footer {
+      background: #062e1d;
+      color: rgba(255,255,255,0.75);
+      text-align: center;
+      padding: 25px 15px;
+      font-size: 13px;
+    }
+
+    @media (max-width: 750px) {
+
+      .navbar {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      nav {
+        justify-content: center;
+      }
+
+      .hero h1 {
+        font-size: 31px;
+      }
+
+      .cards {
+        grid-template-columns: 1fr;
+      }
+
+      section {
+        padding: 50px 17px;
+      }
+
+    }
+
+  </style>
+</head>
+
+<body>
+
+<header>
+
+  <div class="navbar">
+
+    <a href="index.html" class="brand">
+      Yayasan Saudatul Jamilah As Syuja'iyah
+    </a>
+
+    <nav>
+      <a href="index.html">Beranda</a>
+      <a href="paud.html">PAUD</a>
+      <a href="majelis.html">Majelis Taklim</a>
+    </nav>
+
+  </div>
+
+</header>
+
+
+<section class="hero">
+
+  <div class="hero-icon">
+    🎓
+  </div>
+
+  <h1>PAUD Bahrul Ulum</h1>
+
+  <p>
+    Bagian dari Yayasan Saudatul Jamilah As Syuja'iyah
+    dalam bidang pendidikan anak usia dini.
+  </p>
+
+  <a href="index.html" class="back">
+    ← Kembali ke Beranda
+  </a>
+
+</section>
+
+
+<section>
+
+  <div class="container">
+
+    <div class="title">
+
+      <small>Profil</small>
+
+      <h2>Tentang PAUD Bahrul Ulum</h2>
+
+    </div>
+
+    <div class="content">
+
+      <div class="box">
+
+        <h3>Profil PAUD</h3>
+
+        <p>
+          PAUD Bahrul Ulum merupakan lembaga pendidikan
+          anak usia dini yang berada di bawah naungan
+          Yayasan Saudatul Jamilah As Syuja'iyah.
+        </p>
+
+        <p>
+          Informasi mengenai sejarah, program pendidikan,
+          kurikulum, dan kegiatan PAUD akan dilengkapi
+          berdasarkan data resmi lembaga.
+        </p>
+
+      </div>
+
+
+      <div class="box">
+
+        <h3>Kepala/Pengelola</h3>
+
+        <p>
+          <strong>Siti Hikmatillah</strong>
+        </p>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<section class="info">
+
+  <div class="container">
+
+    <div class="title">
+
+      <small>Program</small>
+
+      <h2>Kegiatan PAUD</h2>
+
+    </div>
+
+
+    <div class="cards">
+
+      <div class="card">
+
+        <div class="card-icon">
+          📚
+        </div>
+
+        <h3>Pembelajaran</h3>
+
+        <p>
+          Kegiatan pembelajaran dan stimulasi
+          perkembangan anak usia dini.
+        </p>
+
+      </div>
+
+
+      <div class="card">
+
+        <div class="card-icon">
+          🎨
+        </div>
+
+        <h3>Kreativitas Anak</h3>
+
+        <p>
+          Kegiatan yang mendukung kreativitas,
+          kemandirian, dan perkembangan anak.
+        </p>
+
+      </div>
+
+
+      <div class="card">
+
+        <div class="card-icon">
+          🤝
+        </div>
+
+        <h3>Kegiatan Bersama</h3>
+
+        <p>
+          Kegiatan anak, orang tua, dan lembaga
+          dalam membangun lingkungan pendidikan
+          yang positif.
+        </p>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<section>
+
+  <div class="container">
+
+    <div class="title">
+
+      <small>Informasi</small>
+
+      <h2>Informasi PAUD</h2>
+
+    </div>
+
+
+    <div class="content">
+
+      <div class="box">
+
+        <h3>Pendaftaran</h3>
+
+        <p>
+          Informasi penerimaan peserta didik baru
+          akan ditampilkan di halaman ini.
+        </p>
+
+        <p>
+          Untuk informasi lebih lanjut, silakan
+          menghubungi pengelola yayasan melalui
+          WhatsApp.
+        </p>
+
+      </div>
+
+
+      <div class="box">
+
+        <h3>Galeri Kegiatan</h3>
+
+        <p>
+          Foto kegiatan PAUD Bahrul Ulum akan
+          ditambahkan setelah dokumentasi tersedia.
+        </p>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<section class="contact">
+
+  <div class="container">
+
+    <h2>Informasi Lebih Lanjut</h2>
+
+    <p>
+      Yayasan Saudatul Jamilah As Syuja'iyah
+    </p>
+
+    <p>
+      Kp. Lemah Nendeut (Wates) 03/03,
+      Desa Pancawati, Caringin, Bogor
+    </p>
+
+    <a
+      class="wa"
+      href="https://wa.me/6287821389514"
+      target="_blank">
+      Hubungi via WhatsApp
+    </a>
+
+  </div>
+
+</section>
+
+
+<footer>
+
+  <p>
+    © 2026 Yayasan Saudatul Jamilah As Syuja'iyah
+  </p>
+
+  <p>
+    PAUD Bahrul Ulum
+  </p>
+
+</footer>
+
+</body>
+  </html>
