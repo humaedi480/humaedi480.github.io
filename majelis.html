@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Majelis Taklim Bahrul Ulum</title>
+
+  <style>
+
+    :root {
+      --hijau-tua: #0b5132;
+      --hijau: #147a4b;
+      --hijau-muda: #eaf7ef;
+      --emas: #c99b3b;
+      --abu: #66736d;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      line-height: 1.7;
+      background: #f7faf8;
+      color: #18352a;
+    }
+
+    a {
+      text-decoration: none;
+    }
+
+    header {
+      background: var(--hijau-tua);
+      color: white;
+    }
+
+    .navbar {
+      max-width: 1100px;
+      margin: auto;
+      padding: 15px 20px;
+
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 20px;
+    }
+
+    .brand {
+      color: white;
+      font-weight: bold;
+    }
+
+    nav {
+      display: flex;
+      gap: 18px;
+      flex-wrap: wrap;
+    }
+
+    nav a {
+      color: white;
+      font-size: 14px;
+    }
+
+    nav a:hover {
+      color: #f1d48a;
+    }
+
+    .hero {
+      background: linear-gradient(
+        rgba(11,81,50,0.94),
+        rgba(20,122,75,0.90)
+      );
+
+      color: white;
+      text-align: center;
+      padding: 90px 20px;
+    }
+
+    .icon {
+      font-size: 60px;
+      margin-bottom: 15px;
+    }
+
+    .hero h1 {
+      font-size: 42px;
+      margin-bottom: 12px;
+    }
+
+    .hero p {
+      max-width: 720px;
+      margin: auto;
+      font-size: 17px;
+    }
+
+    .back {
+      display: inline-block;
+      margin-top: 25px;
+      padding: 10px 20px;
+      border: 1px solid white;
+      border-radius: 7px;
+      color: white;
+    }
+
+    section {
+      padding: 65px 20px;
+    }
+
+    .container {
+      max-width: 1050px;
+      margin: auto;
+    }
+
+    .title {
+      text-align: center;
+      margin-bottom: 35px;
+    }
+
+    .title small {
+      color: var(--hijau);
+      font-weight: bold;
+      text-transform: uppercase;
+    }
+
+    .title h2 {
+      color: var(--hijau-tua);
+      font-size: 30px;
+      margin-top: 5px;
+    }
+
+    .content {
+      max-width: 850px;
+      margin: auto;
+    }
+
+    .box {
+      background: white;
+      padding: 30px;
+      margin-bottom: 25px;
+      border-radius: 12px;
+      box-shadow: 0 5px 20px rgba(0,0,0,0.07);
+    }
+
+    .box h3 {
+      color: var(--hijau-tua);
+      margin-bottom: 12px;
+    }
+
+    .box p {
+      color: var(--abu);
+      margin-bottom: 12px;
+    }
+
+    .info {
+      background: var(--hijau-muda);
+    }
+
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+    }
+
+    .card {
+      background: white;
+      padding: 28px 20px;
+      border-radius: 12px;
+      text-align: center;
+      box-shadow: 0 5px 20px rgba(0,0,0,0.06);
+    }
+
+    .card-icon {
+      font-size: 38px;
+      margin-bottom: 10px;
+    }
+
+    .card h3 {
+      color: var(--hijau-tua);
+      margin-bottom: 8px;
+    }
+
+    .card p {
+      color: var(--abu);
+      font-size: 14px;
+    }
+
+    .contact {
+      background: var(--hijau-tua);
+      color: white;
+      text-align: center;
+    }
+
+    .contact h2 {
+      margin-bottom: 15px;
+    }
+
+    .contact p {
+      color: rgba(255,255,255,0.85);
+      margin-bottom: 7px;
+    }
+
+    .wa {
+      display: inline-block;
+      margin-top: 20px;
+      background: #25d366;
+      color: white;
+      padding: 12px 22px;
+      border-radius: 7px;
+      font-weight: bold;
+    }
+
+    footer {
+      background: #062e1d;
+      color: rgba(255,255,255,0.75);
+      text-align: center;
+      padding: 25px 15px;
+      font-size: 13px;
+    }
+
+    @media (max-width: 750px) {
+
+      .navbar {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      nav {
+        justify-content: center;
+      }
+
+      .hero h1 {
+        font-size: 31px;
+      }
+
+      .cards {
+        grid-template-columns: 1fr;
+      }
+
+      section {
+        padding: 50px 17px;
+      }
+
+    }
+
+  </style>
+</head>
+
+<body>
+
+<header>
+
+  <div class="navbar">
+
+    <a href="index.html" class="brand">
+      Yayasan Saudatul Jamilah As Syuja'iyah
+    </a>
+
+    <nav>
+      <a href="index.html">Beranda</a>
+      <a href="paud">PAUD</a>
+      <a href="majelis">Majelis Taklim</a>
+    </nav>
+
+  </div>
+
+</header>
+
+
+<section class="hero">
+
+  <div class="icon">
+    🕌
+  </div>
+
+  <h1>Majelis Taklim Bahrul Ulum</h1>
+
+  <p>
+    Wadah pembinaan keagamaan, pendidikan masyarakat,
+    dan penguatan silaturahmi.
+  </p>
+
+  <a href="index.html" class="back">
+    ← Kembali ke Beranda
+  </a>
+
+</section>
+
+
+<section>
+
+  <div class="container">
+
+    <div class="title">
+
+      <small>Profil</small>
+
+      <h2>Tentang Majelis Taklim</h2>
+
+    </div>
+
+    <div class="content">
+
+      <div class="box">
+
+        <h3>Profil Majelis Taklim Bahrul Ulum</h3>
+
+        <p>
+          Majelis Taklim Bahrul Ulum merupakan wadah
+          pembinaan keagamaan dan pendidikan masyarakat
+          yang berada di bawah naungan Yayasan Saudatul
+          Jamilah As Syuja'iyah.
+        </p>
+
+        <p>
+          Informasi mengenai sejarah majelis, program
+          kegiatan, jadwal kajian, dan kegiatan lainnya
+          akan dilengkapi berdasarkan data resmi majelis.
+        </p>
+
+      </div>
+
+
+      <div class="box">
+
+        <h3>Ketua/Pengasuh</h3>
+
+        <p>
+          <strong>Ahmad Abdunnasir, S.Pd</strong>
+        </p>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<section class="info">
+
+  <div class="container">
+
+    <div class="title">
+
+      <small>Kegiatan</small>
+
+      <h2>Program Majelis Taklim</h2>
+
+    </div>
+
+
+    <div class="cards">
+
+      <div class="card">
+
+        <div class="card-icon">
+          📖
+        </div>
+
+        <h3>Kajian Keagamaan</h3>
+
+        <p>
+          Kegiatan kajian dan pembelajaran
+          keagamaan bagi masyarakat.
+        </p>
+
+      </div>
+
+
+      <div class="card">
+
+        <div class="card-icon">
+          🕌
+        </div>
+
+        <h3>Pengajian</h3>
+
+        <p>
+          Kegiatan pengajian dan pembinaan
+          keagamaan secara rutin.
+        </p>
+
+      </div>
+
+
+      <div class="card">
+
+        <div class="card-icon">
+          🤝
+        </div>
+
+        <h3>Silaturahmi</h3>
+
+        <p>
+          Mempererat hubungan dan kebersamaan
+          antarjamaah serta masyarakat.
+        </p>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<section>
+
+  <div class="container">
+
+    <div class="title">
+
+      <small>Informasi</small>
+
+      <h2>Jadwal Kajian</h2>
+
+    </div>
+
+
+    <div class="content">
+
+      <div class="box">
+
+        <h3>Jadwal Kegiatan</h3>
+
+        <p>
+          Jadwal kajian dan kegiatan Majelis Taklim
+          Bahrul Ulum akan ditampilkan di halaman ini.
+        </p>
+
+        <p>
+          Data jadwal akan diperbarui setelah informasi
+          resmi dari pengelola majelis tersedia.
+        </p>
+
+      </div>
+
+
+      <div class="box">
+
+        <h3>Dokumentasi</h3>
+
+        <p>
+          Foto dan dokumentasi kegiatan Majelis Taklim
+          Bahrul Ulum akan ditambahkan pada tahap
+          pengembangan berikutnya.
+        </p>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<section class="contact">
+
+  <div class="container">
+
+    <h2>Hubungi Yayasan</h2>
+
+    <p>
+      Yayasan Saudatul Jamilah As Syuja'iyah
+    </p>
+
+    <p>
+      Kp. Lemah Nendeut (Wates) 03/03,
+      Desa Pancawati, Caringin, Bogor
+    </p>
+
+    <a
+      class="wa"
+      href="https://wa.me/6287821389514"
+      target="_blank">
+      Hubungi via WhatsApp
+    </a>
+
+  </div>
+
+</section>
+
+
+<footer>
+
+  <p>
+    © 2026 Yayasan Saudatul Jamilah As Syuja'iyah
+  </p>
+
+  <p>
+    Majelis Taklim Bahrul Ulum
+  </p>
+
+</footer>
+
+</body>
+</html>
