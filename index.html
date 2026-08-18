@@ -3,204 +3,499 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
   <title>Yayasan Saudatul Jamilah As Syuja'iyah</title>
 
+  <meta name="description" content="Website resmi Yayasan Saudatul Jamilah As Syuja'iyah yang menaungi PAUD Bahrul Ulum dan Majelis Taklim Bahrul Ulum.">
+
   <style>
+    :root {
+      --hijau-tua: #0b5132;
+      --hijau: #147a4b;
+      --hijau-muda: #eaf7ef;
+      --emas: #c99b3b;
+      --putih: #ffffff;
+      --gelap: #18352a;
+      --abu: #66736d;
+      --bg: #f7faf8;
+    }
+
     * {
-      box-sizing: border-box;
       margin: 0;
       padding: 0;
+      box-sizing: border-box;
+      scroll-behavior: smooth;
     }
 
     body {
-      font-family: Arial, sans-serif;
-      line-height: 1.6;
-      color: #333;
-      background: #f7f9f7;
+      font-family: Arial, Helvetica, sans-serif;
+      background: var(--bg);
+      color: var(--gelap);
+      line-height: 1.7;
     }
+
+    a {
+      text-decoration: none;
+    }
+
+    /* HEADER */
 
     header {
-      background: #0f5132;
-      color: white;
-      padding: 18px 20px;
       position: sticky;
       top: 0;
-      z-index: 100;
+      z-index: 999;
+      background: rgba(11, 81, 50, 0.97);
+      box-shadow: 0 3px 15px rgba(0,0,0,0.12);
     }
 
-    .header-inner {
-      max-width: 1100px;
+    .navbar {
+      max-width: 1150px;
       margin: auto;
+      padding: 15px 22px;
+
       display: flex;
       justify-content: space-between;
       align-items: center;
-      gap: 20px;
+      gap: 25px;
     }
 
     .brand {
-      font-size: 18px;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      color: white;
+    }
+
+    .logo-temp {
+      width: 48px;
+      height: 48px;
+      border-radius: 50%;
+      background: white;
+      color: var(--hijau-tua);
+
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      font-size: 20px;
       font-weight: bold;
+    }
+
+    .brand-text strong {
+      display: block;
+      font-size: 16px;
+    }
+
+    .brand-text span {
+      display: block;
+      font-size: 12px;
+      opacity: 0.85;
+    }
+
+    nav {
+      display: flex;
+      gap: 20px;
+      align-items: center;
     }
 
     nav a {
       color: white;
-      text-decoration: none;
-      margin-left: 18px;
       font-size: 14px;
+      font-weight: 600;
     }
 
     nav a:hover {
-      text-decoration: underline;
+      color: #f1d48a;
     }
 
+    .nav-wa {
+      background: var(--emas);
+      padding: 9px 15px;
+      border-radius: 7px;
+      color: white !important;
+    }
+
+    /* HERO */
+
     .hero {
-      background: linear-gradient(135deg, #0f5132, #198754);
+      min-height: 650px;
+
+      background:
+        linear-gradient(
+          rgba(7, 62, 38, 0.86),
+          rgba(11, 81, 50, 0.78)
+        );
+
       color: white;
+
+      display: flex;
+      align-items: center;
       text-align: center;
-      padding: 90px 20px;
+    }
+
+    .hero-content {
+      max-width: 900px;
+      margin: auto;
+      padding: 90px 22px;
+    }
+
+    .label {
+      display: inline-block;
+      padding: 7px 15px;
+      border: 1px solid rgba(255,255,255,0.5);
+      border-radius: 30px;
+      font-size: 13px;
+      margin-bottom: 20px;
     }
 
     .hero h1 {
-      font-size: 38px;
-      margin-bottom: 15px;
+      font-size: 45px;
+      line-height: 1.2;
+      margin-bottom: 20px;
+    }
+
+    .hero h2 {
+      font-size: 21px;
+      font-weight: normal;
+      color: #f1d48a;
+      margin-bottom: 18px;
     }
 
     .hero p {
-      max-width: 700px;
+      max-width: 720px;
       margin: auto;
-      font-size: 18px;
+      font-size: 17px;
+      opacity: 0.94;
+    }
+
+    .hero-buttons {
+      margin-top: 32px;
+      display: flex;
+      justify-content: center;
+      gap: 13px;
+      flex-wrap: wrap;
     }
 
     .btn {
-      display: inline-block;
-      margin-top: 25px;
-      padding: 12px 22px;
-      background: white;
-      color: #0f5132;
-      text-decoration: none;
+      padding: 12px 23px;
       border-radius: 7px;
       font-weight: bold;
+      display: inline-block;
     }
+
+    .btn-primary {
+      background: var(--emas);
+      color: white;
+    }
+
+    .btn-outline {
+      border: 1px solid white;
+      color: white;
+    }
+
+    /* GENERAL */
 
     section {
+      padding: 75px 22px;
+    }
+
+    .container {
       max-width: 1100px;
       margin: auto;
-      padding: 65px 20px;
     }
 
-    .section-title {
+    .section-heading {
       text-align: center;
-      margin-bottom: 35px;
+      margin-bottom: 42px;
     }
 
-    .section-title h2 {
-      color: #0f5132;
-      font-size: 30px;
-      margin-bottom: 8px;
+    .section-heading small {
+      color: var(--hijau);
+      font-weight: bold;
+      text-transform: uppercase;
+      letter-spacing: 1px;
     }
 
-    .about {
-      text-align: center;
-      max-width: 850px;
-      margin: auto;
+    .section-heading h2 {
+      font-size: 31px;
+      color: var(--hijau-tua);
+      margin: 7px 0;
+    }
+
+    .section-heading p {
+      color: var(--abu);
+    }
+
+    /* ABOUT */
+
+    .about-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 40px;
+      align-items: center;
+    }
+
+    .about-text h3 {
+      color: var(--hijau-tua);
+      font-size: 27px;
+      margin-bottom: 15px;
+    }
+
+    .about-text p {
+      color: var(--abu);
+      margin-bottom: 15px;
+    }
+
+    .about-box {
+      background: var(--hijau-muda);
+      border-left: 5px solid var(--emas);
+      padding: 28px;
+      border-radius: 10px;
+    }
+
+    .about-box div {
+      margin-bottom: 15px;
+    }
+
+    .about-box strong {
+      display: block;
+      color: var(--hijau-tua);
+    }
+
+    .about-box span {
+      color: var(--abu);
+    }
+
+    /* UNIT */
+
+    .unit-section {
+      background: var(--hijau-muda);
     }
 
     .cards {
       display: grid;
       grid-template-columns: repeat(2, 1fr);
-      gap: 25px;
+      gap: 28px;
     }
 
     .card {
       background: white;
-      padding: 30px;
-      border-radius: 12px;
-      box-shadow: 0 4px 15px rgba(0,0,0,0.08);
-      text-align: center;
+      border-radius: 14px;
+      padding: 35px;
+      box-shadow: 0 8px 30px rgba(0,0,0,0.07);
+      border-top: 4px solid var(--hijau);
+      transition: 0.3s;
     }
 
-    .card .icon {
-      font-size: 45px;
-      margin-bottom: 15px;
+    .card:hover {
+      transform: translateY(-5px);
+    }
+
+    .card-icon {
+      font-size: 42px;
+      margin-bottom: 12px;
     }
 
     .card h3 {
-      color: #0f5132;
+      color: var(--hijau-tua);
+      font-size: 24px;
       margin-bottom: 12px;
-      font-size: 23px;
     }
 
-    .card a {
-      display: inline-block;
-      margin-top: 18px;
-      color: #0f5132;
-      font-weight: bold;
-      text-decoration: none;
+    .card p {
+      color: var(--abu);
     }
 
-    .info {
-      background: #eaf4ee;
+    .card-info {
+      margin-top: 20px;
+      padding-top: 18px;
+      border-top: 1px solid #e5ebe7;
     }
 
-    .contact-box {
+    .card-info strong {
+      color: var(--hijau-tua);
+    }
+
+    /* SAMBUTAN */
+
+    .welcome {
       background: white;
+    }
+
+    .welcome-box {
+      max-width: 900px;
+      margin: auto;
+      text-align: center;
+    }
+
+    .quote {
+      font-size: 26px;
+      color: var(--hijau-tua);
+      margin-bottom: 20px;
+    }
+
+    .welcome-box p {
+      color: var(--abu);
+      margin-bottom: 15px;
+    }
+
+    .leader {
+      margin-top: 25px;
+      font-weight: bold;
+      color: var(--hijau-tua);
+    }
+
+    /* KEGIATAN */
+
+    .activities {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 22px;
+    }
+
+    .activity {
+      background: white;
+      border-radius: 12px;
+      padding: 28px;
+      text-align: center;
+      box-shadow: 0 5px 20px rgba(0,0,0,0.06);
+    }
+
+    .activity-icon {
+      font-size: 38px;
+      margin-bottom: 12px;
+    }
+
+    .activity h3 {
+      color: var(--hijau-tua);
+      margin-bottom: 8px;
+    }
+
+    .activity p {
+      color: var(--abu);
+      font-size: 14px;
+    }
+
+    /* CONTACT */
+
+    .contact {
+      background: var(--hijau-tua);
+      color: white;
+    }
+
+    .contact .section-heading h2 {
+      color: white;
+    }
+
+    .contact .section-heading p {
+      color: rgba(255,255,255,0.8);
+    }
+
+    .contact-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 25px;
+    }
+
+    .contact-card {
+      background: rgba(255,255,255,0.08);
       padding: 30px;
       border-radius: 12px;
-      text-align: center;
-      box-shadow: 0 4px 15px rgba(0,0,0,0.08);
     }
 
-    .whatsapp {
+    .contact-card h3 {
+      color: #f1d48a;
+      margin-bottom: 15px;
+    }
+
+    .contact-card p {
+      margin-bottom: 10px;
+    }
+
+    .wa-button {
       display: inline-block;
-      margin-top: 20px;
-      padding: 13px 25px;
-      background: #198754;
+      margin-top: 15px;
+      background: #25d366;
       color: white;
-      text-decoration: none;
+      padding: 12px 22px;
       border-radius: 7px;
       font-weight: bold;
     }
 
+    /* FOOTER */
+
     footer {
-      background: #0b3d26;
-      color: white;
+      background: #062e1d;
+      color: rgba(255,255,255,0.75);
       text-align: center;
       padding: 30px 20px;
-      font-size: 14px;
+      font-size: 13px;
     }
 
-    @media (max-width: 768px) {
-      .header-inner {
+    footer strong {
+      color: white;
+    }
+
+    /* MOBILE */
+
+    @media (max-width: 800px) {
+
+      .navbar {
         flex-direction: column;
+        padding: 13px 15px;
       }
 
       nav {
-        text-align: center;
+        width: 100%;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 10px 15px;
       }
 
       nav a {
-        margin: 0 7px;
-        font-size: 13px;
+        font-size: 12px;
+      }
+
+      .nav-wa {
+        padding: 7px 11px;
       }
 
       .hero {
-        padding: 65px 20px;
+        min-height: 570px;
       }
 
       .hero h1 {
-        font-size: 28px;
+        font-size: 31px;
+      }
+
+      .hero h2 {
+        font-size: 18px;
       }
 
       .hero p {
-        font-size: 16px;
+        font-size: 15px;
       }
 
-      .cards {
+      .about-grid,
+      .cards,
+      .contact-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .activities {
         grid-template-columns: 1fr;
       }
 
       section {
-        padding: 50px 18px;
+        padding: 55px 17px;
+      }
+
+      .section-heading h2 {
+        font-size: 27px;
+      }
+
+      .about-text h3 {
+        font-size: 24px;
       }
     }
   </style>
@@ -208,124 +503,290 @@
 
 <body>
 
-<header>
-  <div class="header-inner">
+<!-- HEADER -->
 
-    <div class="brand">
-      Yayasan Saudatul Jamilah As Syuja'iyah
-    </div>
+<header>
+  <div class="navbar">
+
+    <a href="#beranda" class="brand">
+
+      <div class="logo-temp">
+        SJ
+      </div>
+
+      <div class="brand-text">
+        <strong>Saudatul Jamilah</strong>
+        <span>As Syuja'iyah</span>
+      </div>
+
+    </a>
 
     <nav>
       <a href="#beranda">Beranda</a>
       <a href="#yayasan">Yayasan</a>
-      <a href="#paud">PAUD</a>
-      <a href="#majelis">Majelis</a>
+      <a href="#lembaga">Lembaga</a>
+      <a href="#kegiatan">Kegiatan</a>
       <a href="#kontak">Kontak</a>
+
+      <a
+        class="nav-wa"
+        href="https://wa.me/6287821389514"
+        target="_blank">
+        WhatsApp
+      </a>
     </nav>
 
   </div>
 </header>
 
 
+<!-- HERO -->
+
 <section class="hero" id="beranda">
 
-  <h1>Yayasan Saudatul Jamilah As Syuja'iyah</h1>
+  <div class="hero-content">
 
-  <p>
-    Membangun generasi berilmu, berakhlak,
-    dan bermanfaat bagi masyarakat.
-  </p>
+    <span class="label">
+      Website Resmi Yayasan
+    </span>
 
-  <a class="btn" href="#yayasan">
-    Mengenal Yayasan
-  </a>
+    <h1>
+      Yayasan Saudatul Jamilah As Syuja'iyah
+    </h1>
+
+    <h2>
+      Pendidikan • Keagamaan • Pengabdian Masyarakat
+    </h2>
+
+    <p>
+      Membangun generasi yang berilmu, berakhlak,
+      dan bermanfaat bagi masyarakat melalui
+      pendidikan dan pembinaan keagamaan.
+    </p>
+
+    <div class="hero-buttons">
+
+      <a href="#yayasan" class="btn btn-primary">
+        Tentang Yayasan
+      </a>
+
+      <a href="#kontak" class="btn btn-outline">
+        Hubungi Kami
+      </a>
+
+    </div>
+
+  </div>
 
 </section>
 
+
+<!-- TENTANG YAYASAN -->
 
 <section id="yayasan">
 
-  <div class="section-title">
-    <h2>Tentang Yayasan</h2>
-    <p>Yayasan Saudatul Jamilah As Syuja'iyah</p>
-  </div>
+  <div class="container">
 
-  <div class="about">
+    <div class="section-heading">
+      <small>Tentang Kami</small>
 
-    <p>
-      Yayasan Saudatul Jamilah As Syuja'iyah merupakan
-      lembaga yang menaungi kegiatan pendidikan dan
-      keagamaan masyarakat.
-    </p>
+      <h2>Yayasan Saudatul Jamilah As Syuja'iyah</h2>
 
-    <br>
+      <p>
+        Mengenal lebih dekat lembaga dan unit pendidikan
+        yang berada di bawah naungan yayasan.
+      </p>
+    </div>
 
-    <p>
-      Yayasan beralamat di Kp. Lemah Nendeut (Wates)
-      03/03, Desa Pancawati, Kecamatan Caringin,
-      Bogor.
-    </p>
 
-    <br>
+    <div class="about-grid">
 
-    <p>
-      Ketua Yayasan: <strong>Nyai Jamilah</strong>
-    </p>
+      <div class="about-text">
+
+        <h3>Bergerak dalam Pendidikan dan Keagamaan</h3>
+
+        <p>
+          Yayasan Saudatul Jamilah As Syuja'iyah
+          merupakan yayasan yang menaungi kegiatan
+          pendidikan dan keagamaan masyarakat.
+        </p>
+
+        <p>
+          Yayasan beralamat di Kp. Lemah Nendeut
+          (Wates) 03/03, Desa Pancawati,
+          Kecamatan Caringin, Bogor.
+        </p>
+
+        <p>
+          Informasi mengenai sejarah, visi dan misi,
+          struktur organisasi, serta legalitas yayasan
+          akan dilengkapi secara bertahap berdasarkan
+          data resmi yayasan.
+        </p>
+
+      </div>
+
+
+      <div class="about-box">
+
+        <div>
+          <strong>Ketua Yayasan</strong>
+          <span>Nyai Jamilah</span>
+        </div>
+
+        <div>
+          <strong>Alamat</strong>
+          <span>
+            Kp. Lemah Nendeut (Wates) 03/03,
+            Desa Pancawati, Caringin, Bogor
+          </span>
+        </div>
+
+        <div>
+          <strong>Unit Pendidikan</strong>
+          <span>PAUD Bahrul Ulum</span>
+        </div>
+
+        <div>
+          <strong>Unit Keagamaan</strong>
+          <span>Majelis Taklim Bahrul Ulum</span>
+        </div>
+
+      </div>
+
+    </div>
 
   </div>
 
 </section>
 
 
-<section class="info">
+<!-- LEMBAGA -->
 
-  <div class="section-title">
-    <h2>Lembaga di Bawah Yayasan</h2>
-    <p>Pendidikan dan pembinaan keagamaan</p>
-  </div>
+<section class="unit-section" id="lembaga">
 
-  <div class="cards">
+  <div class="container">
 
-    <div class="card" id="paud">
+    <div class="section-heading">
 
-      <div class="icon">🎓</div>
+      <small>Lembaga Naungan</small>
 
-      <h3>PAUD Bahrul Ulum</h3>
+      <h2>PAUD & Majelis Taklim</h2>
 
       <p>
-        Lembaga pendidikan anak usia dini
-        yang berada di bawah naungan
+        Dua unit kegiatan yang berada di bawah
         Yayasan Saudatul Jamilah As Syuja'iyah.
       </p>
 
-      <p style="margin-top:15px;">
-        <strong>Kepala/Pengelola:</strong><br>
-        Siti Hikmatillah
-      </p>
+    </div>
 
-      <a href="#kontak">Informasi PAUD →</a>
+
+    <div class="cards">
+
+      <!-- PAUD -->
+
+      <div class="card">
+
+        <div class="card-icon">
+          🎓
+        </div>
+
+        <h3>PAUD Bahrul Ulum</h3>
+
+        <p>
+          Lembaga pendidikan anak usia dini
+          yang berada di bawah naungan
+          Yayasan Saudatul Jamilah As Syuja'iyah.
+        </p>
+
+        <div class="card-info">
+
+          <strong>Kepala/Pengelola</strong>
+
+          <p>
+            Siti Hikmatillah
+          </p>
+
+        </div>
+
+      </div>
+
+
+      <!-- MAJELIS -->
+
+      <div class="card">
+
+        <div class="card-icon">
+          🕌
+        </div>
+
+        <h3>Majelis Taklim Bahrul Ulum</h3>
+
+        <p>
+          Wadah pembinaan keagamaan,
+          pendidikan masyarakat, dan
+          penguatan silaturahmi.
+        </p>
+
+        <div class="card-info">
+
+          <strong>Ketua/Pengasuh</strong>
+
+          <p>
+            Ahmad Abdunnasir, S.Pd
+          </p>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- SAMBUTAN -->
+
+<section class="welcome">
+
+  <div class="container">
+
+    <div class="section-heading">
+
+      <small>Sambutan</small>
+
+      <h2>Sambutan Ketua Yayasan</h2>
 
     </div>
 
 
-    <div class="card" id="majelis">
+    <div class="welcome-box">
 
-      <div class="icon">🕌</div>
-
-      <h3>Majelis Taklim Bahrul Ulum</h3>
+      <div class="quote">
+        “Semoga setiap langkah dalam pendidikan
+        dan pembinaan keagamaan menjadi jalan
+        kebaikan bagi generasi dan masyarakat.”
+      </div>
 
       <p>
-        Wadah pembinaan keagamaan,
-        pendidikan masyarakat,
-        dan penguatan silaturahmi.
+        Website ini menjadi sarana informasi dan
+        dokumentasi kegiatan Yayasan Saudatul
+        Jamilah As Syuja'iyah serta lembaga
+        yang berada di bawah naungannya.
       </p>
 
-      <p style="margin-top:15px;">
-        <strong>Ketua/Pengasuh:</strong><br>
-        Ahmad Abdunnasir, S.Pd
+      <p>
+        Kami akan terus mengembangkan informasi
+        mengenai kegiatan yayasan, PAUD Bahrul Ulum,
+        dan Majelis Taklim Bahrul Ulum.
       </p>
 
-      <a href="#kontak">Informasi Majelis →</a>
+      <div class="leader">
+        Nyai Jamilah<br>
+        Ketua Yayasan
+      </div>
 
     </div>
 
@@ -334,71 +795,170 @@
 </section>
 
 
-<section>
+<!-- KEGIATAN -->
 
-  <div class="section-title">
-    <h2>Berita & Kegiatan</h2>
-    <p>Informasi kegiatan yayasan akan ditampilkan di sini.</p>
-  </div>
+<section id="kegiatan">
 
-  <div class="about">
+  <div class="container">
 
-    <p>
-      Halaman berita dan dokumentasi kegiatan
-      akan dikembangkan pada tahap berikutnya.
-    </p>
+    <div class="section-heading">
+
+      <small>Kegiatan</small>
+
+      <h2>Aktivitas Yayasan</h2>
+
+      <p>
+        Dokumentasi dan informasi kegiatan akan
+        ditampilkan pada bagian ini.
+      </p>
+
+    </div>
+
+
+    <div class="activities">
+
+      <div class="activity">
+
+        <div class="activity-icon">
+          🎓
+        </div>
+
+        <h3>Kegiatan PAUD</h3>
+
+        <p>
+          Informasi kegiatan pembelajaran
+          dan aktivitas peserta didik PAUD
+          Bahrul Ulum.
+        </p>
+
+      </div>
+
+
+      <div class="activity">
+
+        <div class="activity-icon">
+          🕌
+        </div>
+
+        <h3>Kajian Keagamaan</h3>
+
+        <p>
+          Informasi jadwal dan kegiatan
+          Majelis Taklim Bahrul Ulum.
+        </p>
+
+      </div>
+
+
+      <div class="activity">
+
+        <div class="activity-icon">
+          🤝
+        </div>
+
+        <h3>Kegiatan Yayasan</h3>
+
+        <p>
+          Dokumentasi kegiatan sosial,
+          pendidikan, dan pengabdian
+          kepada masyarakat.
+        </p>
+
+      </div>
+
+    </div>
 
   </div>
 
 </section>
 
 
-<section id="kontak">
+<!-- KONTAK -->
 
-  <div class="section-title">
-    <h2>Hubungi Kami</h2>
-    <p>Yayasan Saudatul Jamilah As Syuja'iyah</p>
-  </div>
+<section class="contact" id="kontak">
 
-  <div class="contact-box">
+  <div class="container">
 
-    <p>
-      📍 Kp. Lemah Nendeut (Wates) 03/03,
-      Desa Pancawati, Kecamatan Caringin,
-      Bogor
-    </p>
+    <div class="section-heading">
 
-    <p style="margin-top:12px;">
-      👤 Ketua Yayasan: Nyai Jamilah
-    </p>
+      <small>Kontak</small>
 
-    <p style="margin-top:12px;">
-      📱 WhatsApp: 087821389514
-    </p>
+      <h2>Hubungi Yayasan</h2>
 
-    <a
-      class="whatsapp"
-      href="https://wa.me/6287821389514"
-      target="_blank">
-      Hubungi via WhatsApp
-    </a>
+      <p>
+        Silakan menghubungi kami untuk informasi
+        mengenai yayasan dan lembaga di bawahnya.
+      </p>
+
+    </div>
+
+
+    <div class="contact-grid">
+
+      <div class="contact-card">
+
+        <h3>Alamat</h3>
+
+        <p>
+          📍 Kp. Lemah Nendeut (Wates) 03/03
+        </p>
+
+        <p>
+          Desa Pancawati
+        </p>
+
+        <p>
+          Kecamatan Caringin, Bogor
+        </p>
+
+      </div>
+
+
+      <div class="contact-card">
+
+        <h3>WhatsApp</h3>
+
+        <p>
+          Untuk informasi dan komunikasi
+          dengan Yayasan Saudatul Jamilah
+          As Syuja'iyah.
+        </p>
+
+        <a
+          class="wa-button"
+          href="https://wa.me/6287821389514"
+          target="_blank">
+          Chat WhatsApp
+        </a>
+
+      </div>
+
+    </div>
 
   </div>
 
 </section>
 
+
+<!-- FOOTER -->
 
 <footer>
 
   <p>
-    © 2026 Yayasan Saudatul Jamilah As Syuja'iyah
+    © 2026 <strong>Yayasan Saudatul Jamilah As Syuja'iyah</strong>
   </p>
 
-  <p style="margin-top:8px;">
+  <p>
     PAUD Bahrul Ulum • Majelis Taklim Bahrul Ulum
+  </p>
+
+  <p style="margin-top:10px;">
+    Kp. Lemah Nendeut (Wates), Desa Pancawati,
+    Caringin, Bogor
   </p>
 
 </footer>
 
+
 </body>
-                                          </html>
+</html>
