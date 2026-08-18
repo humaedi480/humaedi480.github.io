@@ -1,16 +1,12 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <title>PAUD Bahrul Ulum | Yayasan Saudatul Jamilah As Syuja'iyah</title>
 
-  <meta
-    name="description"
-    content="Profil PAUD Bahrul Ulum di bawah naungan Yayasan Saudatul Jamilah As Syuja'iyah."
-  >
+  <meta name="description" content="Profil PAUD Bahrul Ulum di bawah naungan Yayasan Saudatul Jamilah As Syuja'iyah.">
 
   <style>
 
@@ -46,96 +42,42 @@
       text-decoration: none;
     }
 
-    /* HEADER */
-
     header {
-      position: sticky;
-      top: 0;
-      z-index: 999;
-
-      background: rgba(11,81,50,0.97);
-
-      box-shadow:
-        0 3px 15px rgba(0,0,0,0.12);
+      background: var(--hijau-tua);
+      color: white;
     }
 
     .navbar {
-      max-width: 1150px;
+      max-width: 1100px;
       margin: auto;
-
-      padding: 14px 20px;
+      padding: 15px 20px;
 
       display: flex;
       justify-content: space-between;
       align-items: center;
-
       gap: 20px;
     }
 
     .brand {
-      display: flex;
-      align-items: center;
-      gap: 11px;
-
       color: white;
-    }
-
-    .logo-temp {
-      width: 47px;
-      height: 47px;
-
-      border-radius: 50%;
-
-      background: white;
-      color: var(--hijau-tua);
-
-      display: flex;
-      align-items: center;
-      justify-content: center;
-
       font-weight: bold;
-      font-size: 17px;
-    }
-
-    .brand-text strong {
-      display: block;
-      font-size: 14px;
-    }
-
-    .brand-text span {
-      display: block;
-      font-size: 11px;
-      opacity: 0.85;
+      font-size: 16px;
     }
 
     nav {
       display: flex;
-      align-items: center;
-      gap: 16px;
-
+      gap: 18px;
       flex-wrap: wrap;
     }
 
     nav a {
       color: white;
-
-      font-size: 13px;
-      font-weight: 600;
+      font-size: 14px;
     }
 
     nav a:hover {
       color: #f1d48a;
     }
-
-    .nav-wa {
-      background: var(--emas);
-
-      padding: 8px 13px;
-
-      border-radius: 7px;
-    }
-
-    /* HERO */
 
     .hero {
       background:
@@ -145,9 +87,7 @@
         );
 
       color: white;
-
       text-align: center;
-
       padding: 90px 20px;
     }
 
@@ -169,19 +109,12 @@
 
     .back {
       display: inline-block;
-
       margin-top: 25px;
-
       padding: 10px 20px;
-
       border: 1px solid white;
-
       color: white;
-
       border-radius: 7px;
     }
-
-    /* GENERAL */
 
     section {
       padding: 65px 20px;
@@ -201,7 +134,6 @@
       color: var(--hijau);
       font-weight: bold;
       text-transform: uppercase;
-      letter-spacing: 1px;
     }
 
     .title h2 {
@@ -222,14 +154,9 @@
 
     .box {
       background: white;
-
       padding: 30px;
-
       border-radius: 12px;
-
-      box-shadow:
-        0 5px 20px rgba(0,0,0,0.07);
-
+      box-shadow: 0 5px 20px rgba(0,0,0,0.07);
       margin-bottom: 25px;
     }
 
@@ -238,35 +165,18 @@
       margin-bottom: 12px;
     }
 
-    /* PROGRAM */
-
-    .info {
-      background: var(--hijau-muda);
-    }
-
     .cards {
       display: grid;
-
-      grid-template-columns:
-        repeat(3, 1fr);
-
+      grid-template-columns: repeat(3, 1fr);
       gap: 20px;
     }
 
     .card {
       background: white;
-
       padding: 28px 20px;
-
       border-radius: 12px;
-
       text-align: center;
-
-      box-shadow:
-        0 5px 20px rgba(0,0,0,0.06);
-
-      border-top:
-        4px solid var(--hijau);
+      box-shadow: 0 5px 20px rgba(0,0,0,0.06);
     }
 
     .card-icon {
@@ -284,13 +194,13 @@
       font-size: 14px;
     }
 
-    /* KONTAK */
+    .info {
+      background: var(--hijau-muda);
+    }
 
     .contact {
       background: var(--hijau-tua);
-
       color: white;
-
       text-align: center;
     }
 
@@ -306,57 +216,31 @@
 
     .wa {
       display: inline-block;
-
       margin-top: 20px;
-
       background: #25d366;
-
       color: white;
-
       padding: 12px 22px;
-
       border-radius: 7px;
-
       font-weight: bold;
     }
 
-    /* FOOTER */
-
     footer {
       background: #062e1d;
-
-      color:
-        rgba(255,255,255,0.75);
-
+      color: rgba(255,255,255,0.75);
       text-align: center;
-
       padding: 25px 15px;
-
       font-size: 13px;
     }
 
-    footer strong {
-      color: white;
-    }
-
-    /* MOBILE */
-
-    @media(max-width:800px) {
+    @media (max-width: 750px) {
 
       .navbar {
         flex-direction: column;
-
-        padding: 13px 15px;
+        text-align: center;
       }
 
       nav {
         justify-content: center;
-
-        gap: 10px 13px;
-      }
-
-      nav a {
-        font-size: 12px;
       }
 
       .hero h1 {
@@ -374,79 +258,28 @@
     }
 
   </style>
-
 </head>
 
 <body>
-
-<!-- HEADER -->
 
 <header>
 
   <div class="navbar">
 
     <a href="index.html" class="brand">
-
-      <div class="logo-temp">
-        SJ
-      </div>
-
-      <div class="brand-text">
-
-        <strong>
-          Saudatul Jamilah
-        </strong>
-
-        <span>
-          As Syuja'iyah
-        </span>
-
-      </div>
-
+      Yayasan Saudatul Jamilah As Syuja'iyah
     </a>
 
     <nav>
-
-      <a href="index.html">
-        Beranda
-      </a>
-
-      <a href="profil.html">
-        Profil
-      </a>
-
-      <a href="paud.html">
-        PAUD
-      </a>
-
-      <a href="majelis.html">
-        Majelis Taklim
-      </a>
-
-      <a href="index.html#kegiatan">
-        Kegiatan
-      </a>
-
-      <a href="index.html#kontak">
-        Kontak
-      </a>
-
-      <a
-        href="https://wa.me/6287821389514"
-        target="_blank"
-        class="nav-wa">
-
-        WhatsApp
-
-      </a>
-
+      <a href="index.html">Beranda</a>
+      <a href="paud.html">PAUD</a>
+      <a href="majelis.html">Majelis Taklim</a>
     </nav>
 
   </div>
 
 </header>
 
-<!-- HERO -->
 
 <section class="hero">
 
@@ -454,26 +287,19 @@
     🎓
   </div>
 
-  <h1>
-    PAUD Bahrul Ulum
-  </h1>
+  <h1>PAUD Bahrul Ulum</h1>
 
   <p>
     Bagian dari Yayasan Saudatul Jamilah As Syuja'iyah
     dalam bidang pendidikan anak usia dini.
   </p>
 
-  <a
-    href="index.html"
-    class="back">
-
+  <a href="index.html" class="back">
     ← Kembali ke Beranda
-
   </a>
 
 </section>
 
-<!-- PROFIL -->
 
 <section>
 
@@ -481,13 +307,9 @@
 
     <div class="title">
 
-      <small>
-        Profil
-      </small>
+      <small>Profil</small>
 
-      <h2>
-        Tentang PAUD Bahrul Ulum
-      </h2>
+      <h2>Tentang PAUD Bahrul Ulum</h2>
 
     </div>
 
@@ -495,9 +317,7 @@
 
       <div class="box">
 
-        <h3>
-          Profil PAUD
-        </h3>
+        <h3>Profil PAUD</h3>
 
         <p>
           PAUD Bahrul Ulum merupakan lembaga pendidikan
@@ -513,16 +333,13 @@
 
       </div>
 
+
       <div class="box">
 
-        <h3>
-          Kepala/Pengelola
-        </h3>
+        <h3>Kepala/Pengelola</h3>
 
         <p>
-          <strong>
-            Siti Hikmatillah
-          </strong>
+          <strong>Siti Hikmatillah</strong>
         </p>
 
       </div>
@@ -533,7 +350,6 @@
 
 </section>
 
-<!-- KEGIATAN -->
 
 <section class="info">
 
@@ -541,15 +357,12 @@
 
     <div class="title">
 
-      <small>
-        Program
-      </small>
+      <small>Program</small>
 
-      <h2>
-        Kegiatan PAUD
-      </h2>
+      <h2>Kegiatan PAUD</h2>
 
     </div>
+
 
     <div class="cards">
 
@@ -559,9 +372,7 @@
           📚
         </div>
 
-        <h3>
-          Pembelajaran
-        </h3>
+        <h3>Pembelajaran</h3>
 
         <p>
           Kegiatan pembelajaran dan stimulasi
@@ -570,15 +381,14 @@
 
       </div>
 
+
       <div class="card">
 
         <div class="card-icon">
           🎨
         </div>
 
-        <h3>
-          Kreativitas Anak
-        </h3>
+        <h3>Kreativitas Anak</h3>
 
         <p>
           Kegiatan yang mendukung kreativitas,
@@ -587,15 +397,14 @@
 
       </div>
 
+
       <div class="card">
 
         <div class="card-icon">
           🤝
         </div>
 
-        <h3>
-          Kegiatan Bersama
-        </h3>
+        <h3>Kegiatan Bersama</h3>
 
         <p>
           Kegiatan anak, orang tua, dan lembaga
@@ -611,7 +420,6 @@
 
 </section>
 
-<!-- INFORMASI -->
 
 <section>
 
@@ -619,23 +427,18 @@
 
     <div class="title">
 
-      <small>
-        Informasi
-      </small>
+      <small>Informasi</small>
 
-      <h2>
-        Informasi PAUD
-      </h2>
+      <h2>Informasi PAUD</h2>
 
     </div>
+
 
     <div class="content">
 
       <div class="box">
 
-        <h3>
-          Pendaftaran
-        </h3>
+        <h3>Pendaftaran</h3>
 
         <p>
           Informasi penerimaan peserta didik baru
@@ -650,11 +453,10 @@
 
       </div>
 
+
       <div class="box">
 
-        <h3>
-          Galeri Kegiatan
-        </h3>
+        <h3>Galeri Kegiatan</h3>
 
         <p>
           Foto kegiatan PAUD Bahrul Ulum akan
@@ -669,15 +471,12 @@
 
 </section>
 
-<!-- KONTAK -->
 
 <section class="contact">
 
   <div class="container">
 
-    <h2>
-      Informasi Lebih Lanjut
-    </h2>
+    <h2>Informasi Lebih Lanjut</h2>
 
     <p>
       Yayasan Saudatul Jamilah As Syuja'iyah
@@ -692,27 +491,18 @@
       class="wa"
       href="https://wa.me/6287821389514"
       target="_blank">
-
       Hubungi via WhatsApp
-
     </a>
 
   </div>
 
 </section>
 
-<!-- FOOTER -->
 
 <footer>
 
   <p>
-
-    © 2026
-
-    <strong>
-      Yayasan Saudatul Jamilah As Syuja'iyah
-    </strong>
-
+    © 2026 Yayasan Saudatul Jamilah As Syuja'iyah
   </p>
 
   <p>
@@ -722,4 +512,4 @@
 </footer>
 
 </body>
-</html>
+  </html>
