@@ -1,10 +1,16 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
+
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>Majelis Taklim Bahrul Ulum</title>
+  <title>Majelis Taklim Bahrul Ulum | Yayasan Saudatul Jamilah As Syuja'iyah</title>
+
+  <meta
+    name="description"
+    content="Profil Majelis Taklim Bahrul Ulum di bawah naungan Yayasan Saudatul Jamilah As Syuja'iyah."
+  >
 
   <style>
 
@@ -13,7 +19,10 @@
       --hijau: #147a4b;
       --hijau-muda: #eaf7ef;
       --emas: #c99b3b;
+      --putih: #ffffff;
+      --gelap: #18352a;
       --abu: #66736d;
+      --bg: #f7faf8;
     }
 
     * {
@@ -22,71 +31,128 @@
       box-sizing: border-box;
     }
 
+    html {
+      scroll-behavior: smooth;
+    }
+
     body {
       font-family: Arial, Helvetica, sans-serif;
       line-height: 1.7;
-      background: #f7faf8;
-      color: #18352a;
+      background: var(--bg);
+      color: var(--gelap);
     }
 
     a {
       text-decoration: none;
     }
 
+
+    /* =========================
+       HEADER
+    ========================= */
+
     header {
       background: var(--hijau-tua);
       color: white;
+      box-shadow: 0 3px 15px rgba(0,0,0,0.12);
     }
 
     .navbar {
-      max-width: 1100px;
+      max-width: 1150px;
       margin: auto;
-      padding: 15px 20px;
+      padding: 14px 20px;
 
       display: flex;
       justify-content: space-between;
       align-items: center;
+
       gap: 20px;
     }
 
     .brand {
+      display: flex;
+      align-items: center;
+      gap: 10px;
       color: white;
+    }
+
+    .logo-temp {
+      width: 46px;
+      height: 46px;
+
+      border-radius: 50%;
+
+      background: white;
+      color: var(--hijau-tua);
+
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
       font-weight: bold;
+      font-size: 16px;
+    }
+
+    .brand-text strong {
+      display: block;
+      font-size: 15px;
+    }
+
+    .brand-text span {
+      display: block;
+      font-size: 11px;
+      opacity: 0.85;
     }
 
     nav {
       display: flex;
-      gap: 18px;
+      align-items: center;
+      gap: 16px;
       flex-wrap: wrap;
     }
 
     nav a {
       color: white;
-      font-size: 14px;
+      font-size: 13px;
+      font-weight: 600;
     }
 
     nav a:hover {
       color: #f1d48a;
     }
 
+    .wa-nav {
+      background: var(--emas);
+      padding: 8px 13px;
+      border-radius: 7px;
+    }
+
+
+    /* =========================
+       HERO
+    ========================= */
+
     .hero {
-      background: linear-gradient(
-        rgba(11,81,50,0.94),
-        rgba(20,122,75,0.90)
-      );
+      background:
+        linear-gradient(
+          rgba(11,81,50,0.94),
+          rgba(20,122,75,0.90)
+        );
 
       color: white;
       text-align: center;
+
       padding: 90px 20px;
     }
 
-    .icon {
+    .hero-icon {
       font-size: 60px;
       margin-bottom: 15px;
     }
 
     .hero h1 {
       font-size: 42px;
+      line-height: 1.25;
       margin-bottom: 12px;
     }
 
@@ -98,12 +164,21 @@
 
     .back {
       display: inline-block;
+
       margin-top: 25px;
+
       padding: 10px 20px;
+
       border: 1px solid white;
       border-radius: 7px;
+
       color: white;
     }
+
+
+    /* =========================
+       GENERAL
+    ========================= */
 
     section {
       padding: 65px 20px;
@@ -123,12 +198,17 @@
       color: var(--hijau);
       font-weight: bold;
       text-transform: uppercase;
+      letter-spacing: 1px;
     }
 
     .title h2 {
       color: var(--hijau-tua);
       font-size: 30px;
       margin-top: 5px;
+    }
+
+    .title p {
+      color: var(--abu);
     }
 
     .content {
@@ -138,10 +218,15 @@
 
     .box {
       background: white;
+
       padding: 30px;
+
       margin-bottom: 25px;
+
       border-radius: 12px;
-      box-shadow: 0 5px 20px rgba(0,0,0,0.07);
+
+      box-shadow:
+        0 5px 20px rgba(0,0,0,0.07);
     }
 
     .box h3 {
@@ -154,22 +239,38 @@
       margin-bottom: 12px;
     }
 
+
+    /* =========================
+       PROGRAM
+    ========================= */
+
     .info {
       background: var(--hijau-muda);
     }
 
     .cards {
       display: grid;
-      grid-template-columns: repeat(3, 1fr);
+
+      grid-template-columns:
+        repeat(3, 1fr);
+
       gap: 20px;
     }
 
     .card {
       background: white;
+
       padding: 28px 20px;
+
       border-radius: 12px;
+
       text-align: center;
-      box-shadow: 0 5px 20px rgba(0,0,0,0.06);
+
+      box-shadow:
+        0 5px 20px rgba(0,0,0,0.06);
+
+      border-top:
+        4px solid var(--hijau);
     }
 
     .card-icon {
@@ -187,13 +288,21 @@
       font-size: 14px;
     }
 
+
+    /* =========================
+       KONTAK
+    ========================= */
+
     .contact {
       background: var(--hijau-tua);
+
       color: white;
+
       text-align: center;
     }
 
     .contact h2 {
+      color: white;
       margin-bottom: 15px;
     }
 
@@ -204,21 +313,45 @@
 
     .wa {
       display: inline-block;
+
       margin-top: 20px;
+
       background: #25d366;
+
       color: white;
+
       padding: 12px 22px;
+
       border-radius: 7px;
+
       font-weight: bold;
     }
 
+
+    /* =========================
+       FOOTER
+    ========================= */
+
     footer {
       background: #062e1d;
+
       color: rgba(255,255,255,0.75);
+
       text-align: center;
-      padding: 25px 15px;
+
+      padding: 27px 15px;
+
       font-size: 13px;
     }
+
+    footer strong {
+      color: white;
+    }
+
+
+    /* =========================
+       MOBILE
+    ========================= */
 
     @media (max-width: 750px) {
 
@@ -229,6 +362,11 @@
 
       nav {
         justify-content: center;
+        gap: 10px 13px;
+      }
+
+      nav a {
+        font-size: 12px;
       }
 
       .hero h1 {
@@ -246,22 +384,69 @@
     }
 
   </style>
+
 </head>
 
+
 <body>
+
+
+<!-- =========================
+     HEADER
+========================= -->
 
 <header>
 
   <div class="navbar">
 
     <a href="index.html" class="brand">
-      Yayasan Saudatul Jamilah As Syuja'iyah
+
+      <div class="logo-temp">
+        SJ
+      </div>
+
+      <div class="brand-text">
+
+        <strong>
+          Saudatul Jamilah
+        </strong>
+
+        <span>
+          As Syuja'iyah
+        </span>
+
+      </div>
+
     </a>
 
+
     <nav>
-      <a href="index.html">Beranda</a>
-      <a href="paud">PAUD</a>
-      <a href="majelis">Majelis Taklim</a>
+
+      <a href="index.html">
+        Beranda
+      </a>
+
+      <a href="profil.html">
+        Profil
+      </a>
+
+      <a href="paud.html">
+        PAUD
+      </a>
+
+      <a href="majelis.html">
+        Majelis Taklim
+      </a>
+
+      <a
+        href="https://wa.me/6287821389514"
+        target="_blank"
+        class="wa-nav">
+
+        WhatsApp
+
+      </a>
+
     </nav>
 
   </div>
@@ -269,25 +454,40 @@
 </header>
 
 
+<!-- =========================
+     HERO
+========================= -->
+
 <section class="hero">
 
-  <div class="icon">
+  <div class="hero-icon">
     🕌
   </div>
 
-  <h1>Majelis Taklim Bahrul Ulum</h1>
+  <h1>
+    Majelis Taklim Bahrul Ulum
+  </h1>
 
   <p>
-    Wadah pembinaan keagamaan, pendidikan masyarakat,
+    Wadah pembinaan keagamaan,
+    pendidikan masyarakat,
     dan penguatan silaturahmi.
   </p>
 
-  <a href="index.html" class="back">
+  <a
+    href="index.html"
+    class="back">
+
     ← Kembali ke Beranda
+
   </a>
 
 </section>
 
+
+<!-- =========================
+     PROFIL
+========================= -->
 
 <section>
 
@@ -295,29 +495,43 @@
 
     <div class="title">
 
-      <small>Profil</small>
+      <small>
+        Profil
+      </small>
 
-      <h2>Tentang Majelis Taklim</h2>
+      <h2>
+        Tentang Majelis Taklim
+      </h2>
+
+      <p>
+        Mengenal Majelis Taklim Bahrul Ulum
+        di bawah naungan yayasan.
+      </p>
 
     </div>
 
+
     <div class="content">
 
+
       <div class="box">
 
-        <h3>Profil Majelis Taklim Bahrul Ulum</h3>
+        <h3>
+          Profil Majelis Taklim Bahrul Ulum
+        </h3>
 
         <p>
-          Majelis Taklim Bahrul Ulum merupakan wadah
-          pembinaan keagamaan dan pendidikan masyarakat
-          yang berada di bawah naungan Yayasan Saudatul
-          Jamilah As Syuja'iyah.
+          Majelis Taklim Bahrul Ulum merupakan
+          wadah pembinaan keagamaan dan pendidikan
+          masyarakat yang berada di bawah naungan
+          Yayasan Saudatul Jamilah As Syuja'iyah.
         </p>
 
         <p>
-          Informasi mengenai sejarah majelis, program
-          kegiatan, jadwal kajian, dan kegiatan lainnya
-          akan dilengkapi berdasarkan data resmi majelis.
+          Informasi mengenai sejarah majelis,
+          program kegiatan, jadwal kajian,
+          dan kegiatan lainnya akan dilengkapi
+          berdasarkan data resmi majelis.
         </p>
 
       </div>
@@ -325,13 +539,18 @@
 
       <div class="box">
 
-        <h3>Ketua/Pengasuh</h3>
+        <h3>
+          Ketua / Pengasuh
+        </h3>
 
         <p>
-          <strong>Ahmad Abdunnasir, S.Pd</strong>
+          <strong>
+            Ahmad Abdunnasir, S.Pd
+          </strong>
         </p>
 
       </div>
+
 
     </div>
 
@@ -340,20 +559,34 @@
 </section>
 
 
+<!-- =========================
+     PROGRAM
+========================= -->
+
 <section class="info">
 
   <div class="container">
 
     <div class="title">
 
-      <small>Kegiatan</small>
+      <small>
+        Kegiatan
+      </small>
 
-      <h2>Program Majelis Taklim</h2>
+      <h2>
+        Program Majelis Taklim
+      </h2>
+
+      <p>
+        Kegiatan pembinaan keagamaan
+        dan kebersamaan masyarakat.
+      </p>
 
     </div>
 
 
     <div class="cards">
+
 
       <div class="card">
 
@@ -361,7 +594,9 @@
           📖
         </div>
 
-        <h3>Kajian Keagamaan</h3>
+        <h3>
+          Kajian Keagamaan
+        </h3>
 
         <p>
           Kegiatan kajian dan pembelajaran
@@ -377,7 +612,9 @@
           🕌
         </div>
 
-        <h3>Pengajian</h3>
+        <h3>
+          Pengajian
+        </h3>
 
         <p>
           Kegiatan pengajian dan pembinaan
@@ -393,7 +630,9 @@
           🤝
         </div>
 
-        <h3>Silaturahmi</h3>
+        <h3>
+          Silaturahmi
+        </h3>
 
         <p>
           Mempererat hubungan dan kebersamaan
@@ -402,12 +641,17 @@
 
       </div>
 
+
     </div>
 
   </div>
 
 </section>
 
+
+<!-- =========================
+     JADWAL & DOKUMENTASI
+========================= -->
 
 <section>
 
@@ -415,27 +659,41 @@
 
     <div class="title">
 
-      <small>Informasi</small>
+      <small>
+        Informasi
+      </small>
 
-      <h2>Jadwal Kajian</h2>
+      <h2>
+        Jadwal Kajian
+      </h2>
+
+      <p>
+        Informasi kegiatan Majelis Taklim
+        Bahrul Ulum.
+      </p>
 
     </div>
 
 
     <div class="content">
 
+
       <div class="box">
 
-        <h3>Jadwal Kegiatan</h3>
+        <h3>
+          Jadwal Kegiatan
+        </h3>
 
         <p>
-          Jadwal kajian dan kegiatan Majelis Taklim
-          Bahrul Ulum akan ditampilkan di halaman ini.
+          Jadwal kajian dan kegiatan
+          Majelis Taklim Bahrul Ulum
+          akan ditampilkan di halaman ini.
         </p>
 
         <p>
-          Data jadwal akan diperbarui setelah informasi
-          resmi dari pengelola majelis tersedia.
+          Data jadwal akan diperbarui
+          setelah informasi resmi dari
+          pengelola majelis tersedia.
         </p>
 
       </div>
@@ -443,15 +701,19 @@
 
       <div class="box">
 
-        <h3>Dokumentasi</h3>
+        <h3>
+          Dokumentasi
+        </h3>
 
         <p>
-          Foto dan dokumentasi kegiatan Majelis Taklim
-          Bahrul Ulum akan ditambahkan pada tahap
-          pengembangan berikutnya.
+          Foto dan dokumentasi kegiatan
+          Majelis Taklim Bahrul Ulum akan
+          ditambahkan setelah dokumentasi
+          tersedia.
         </p>
 
       </div>
+
 
     </div>
 
@@ -460,11 +722,17 @@
 </section>
 
 
+<!-- =========================
+     KONTAK
+========================= -->
+
 <section class="contact">
 
   <div class="container">
 
-    <h2>Hubungi Yayasan</h2>
+    <h2>
+      Hubungi Yayasan
+    </h2>
 
     <p>
       Yayasan Saudatul Jamilah As Syuja'iyah
@@ -479,7 +747,9 @@
       class="wa"
       href="https://wa.me/6287821389514"
       target="_blank">
+
       Hubungi via WhatsApp
+
     </a>
 
   </div>
@@ -487,17 +757,30 @@
 </section>
 
 
+<!-- =========================
+     FOOTER
+========================= -->
+
 <footer>
 
   <p>
-    © 2026 Yayasan Saudatul Jamilah As Syuja'iyah
+
+    © 2026
+
+    <strong>
+      Yayasan Saudatul Jamilah As Syuja'iyah
+    </strong>
+
   </p>
 
   <p>
+    PAUD Bahrul Ulum
+    •
     Majelis Taklim Bahrul Ulum
   </p>
 
 </footer>
+
 
 </body>
 </html>
