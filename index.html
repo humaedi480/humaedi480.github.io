@@ -1,3 +1,4 @@
+```html
 <!DOCTYPE html>
 <html lang="id">
 <head>
@@ -46,32 +47,21 @@
       text-decoration: none;
     }
 
-
-    /* =========================
-       HEADER
-    ========================= */
-
     header {
       position: sticky;
       top: 0;
       z-index: 999;
-
       background: rgba(11,81,50,0.97);
-
-      box-shadow:
-        0 3px 15px rgba(0,0,0,0.12);
+      box-shadow: 0 3px 15px rgba(0,0,0,0.12);
     }
 
     .navbar {
       max-width: 1150px;
       margin: auto;
-
       padding: 14px 20px;
-
       display: flex;
       justify-content: space-between;
       align-items: center;
-
       gap: 20px;
     }
 
@@ -79,23 +69,18 @@
       display: flex;
       align-items: center;
       gap: 11px;
-
       color: white;
     }
 
     .logo-temp {
       width: 47px;
       height: 47px;
-
       border-radius: 50%;
-
       background: white;
       color: var(--hijau-tua);
-
       display: flex;
       align-items: center;
       justify-content: center;
-
       font-weight: bold;
       font-size: 17px;
     }
@@ -115,13 +100,11 @@
       display: flex;
       align-items: center;
       gap: 16px;
-
       flex-wrap: wrap;
     }
 
     nav a {
       color: white;
-
       font-size: 13px;
       font-weight: 600;
     }
@@ -132,553 +115,346 @@
 
     .nav-wa {
       background: var(--emas);
-
       padding: 8px 13px;
-
       border-radius: 7px;
     }
 
-
-    /* =========================
-       HERO
-    ========================= */
-
     .hero {
-
       min-height: 650px;
-
       background:
         linear-gradient(
           rgba(7,62,38,0.90),
           rgba(11,81,50,0.82)
         );
-
       color: white;
-
       display: flex;
       align-items: center;
-
       text-align: center;
     }
 
     .hero-content {
       max-width: 900px;
-
       margin: auto;
-
       padding: 90px 20px;
     }
 
     .label {
       display: inline-block;
-
-      border: 1px solid
-        rgba(255,255,255,0.5);
-
+      border: 1px solid rgba(255,255,255,0.5);
       padding: 7px 15px;
-
       border-radius: 30px;
-
       font-size: 12px;
-
       margin-bottom: 20px;
     }
 
     .hero h1 {
-
       font-size: 45px;
-
       line-height: 1.2;
-
       margin-bottom: 16px;
     }
 
     .hero h2 {
-
       color: #f1d48a;
-
       font-size: 20px;
-
       font-weight: normal;
-
       margin-bottom: 18px;
     }
 
     .hero p {
-
       max-width: 720px;
-
       margin: auto;
-
       font-size: 16px;
-
       opacity: 0.94;
     }
 
     .hero-buttons {
-
       margin-top: 30px;
-
       display: flex;
-
       justify-content: center;
-
       gap: 12px;
-
       flex-wrap: wrap;
     }
 
     .btn {
-
       padding: 12px 22px;
-
       border-radius: 7px;
-
       font-weight: bold;
     }
 
     .btn-primary {
-
       background: var(--emas);
-
       color: white;
     }
 
     .btn-outline {
-
       border: 1px solid white;
-
       color: white;
     }
-
-
-    /* =========================
-       GENERAL
-    ========================= */
 
     section {
       padding: 70px 20px;
     }
 
     .container {
-
       max-width: 1100px;
-
       margin: auto;
     }
 
     .section-heading {
-
       text-align: center;
-
       margin-bottom: 42px;
     }
 
     .section-heading small {
-
       color: var(--hijau);
-
       font-weight: bold;
-
       text-transform: uppercase;
-
       letter-spacing: 1px;
     }
 
     .section-heading h2 {
-
       color: var(--hijau-tua);
-
       font-size: 31px;
-
       margin: 6px 0;
     }
 
     .section-heading p {
-
       color: var(--abu);
     }
 
-
-    /* =========================
-       TENTANG YAYASAN
-    ========================= */
-
     .about-grid {
-
       display: grid;
-
-      grid-template-columns:
-        1fr 1fr;
-
+      grid-template-columns: 1fr 1fr;
       gap: 40px;
-
       align-items: center;
     }
 
     .about-text h3 {
-
       color: var(--hijau-tua);
-
       font-size: 27px;
-
       margin-bottom: 15px;
     }
 
     .about-text p {
-
       color: var(--abu);
-
       margin-bottom: 14px;
     }
 
     .about-box {
-
       background: var(--hijau-muda);
-
-      border-left:
-        5px solid var(--emas);
-
+      border-left: 5px solid var(--emas);
       padding: 28px;
-
       border-radius: 10px;
     }
 
     .about-box div {
-
       margin-bottom: 16px;
     }
 
     .about-box strong {
-
       display: block;
-
       color: var(--hijau-tua);
     }
 
     .about-box span {
-
       color: var(--abu);
     }
 
     .profile-button {
-
       display: inline-block;
-
       margin-top: 10px;
-
       background: var(--hijau);
-
       color: white;
-
       padding: 11px 20px;
-
       border-radius: 7px;
-
       font-weight: bold;
-
       font-size: 14px;
     }
 
     .profile-button:hover {
-
       background: var(--hijau-tua);
     }
 
-
-    /* =========================
-       LEMBAGA
-    ========================= */
-
     .unit-section {
-
       background: var(--hijau-muda);
     }
 
     .cards {
-
       display: grid;
-
-      grid-template-columns:
-        repeat(2,1fr);
-
+      grid-template-columns: repeat(2,1fr);
       gap: 28px;
     }
 
     .card {
-
       display: block;
-
       background: white;
-
       border-radius: 14px;
-
       padding: 35px;
-
-      box-shadow:
-        0 8px 30px rgba(0,0,0,0.07);
-
-      border-top:
-        4px solid var(--hijau);
-
+      box-shadow: 0 8px 30px rgba(0,0,0,0.07);
+      border-top: 4px solid var(--hijau);
       color: var(--gelap);
-
       transition: 0.25s;
     }
 
     .card:hover {
-
-      transform:
-        translateY(-5px);
-
-      box-shadow:
-        0 12px 35px
-        rgba(0,0,0,0.12);
+      transform: translateY(-5px);
+      box-shadow: 0 12px 35px rgba(0,0,0,0.12);
     }
 
     .card-icon {
-
       font-size: 43px;
-
       margin-bottom: 12px;
     }
 
     .card h3 {
-
       color: var(--hijau-tua);
-
       font-size: 24px;
-
       margin-bottom: 12px;
     }
 
     .card p {
-
       color: var(--abu);
     }
 
     .card-link {
-
       display: inline-block;
-
       margin-top: 20px;
-
       color: var(--hijau);
-
       font-weight: bold;
     }
 
-
-    /* =========================
-       KEGIATAN
-    ========================= */
-
     .activities {
-
       display: grid;
-
-      grid-template-columns:
-        repeat(3,1fr);
-
+      grid-template-columns: repeat(3,1fr);
       gap: 22px;
     }
 
     .activity {
-
       background: white;
-
       border-radius: 12px;
-
       padding: 28px;
-
       text-align: center;
-
-      box-shadow:
-        0 5px 20px rgba(0,0,0,0.06);
+      box-shadow: 0 5px 20px rgba(0,0,0,0.06);
     }
 
     .activity-icon {
-
       font-size: 38px;
-
       margin-bottom: 10px;
     }
 
     .activity h3 {
-
       color: var(--hijau-tua);
-
       margin-bottom: 8px;
     }
 
     .activity p {
-
       color: var(--abu);
-
       font-size: 14px;
     }
 
-
-    /* =========================
-       KONTAK
-    ========================= */
-
     .contact {
-
       background: var(--hijau-tua);
-
       color: white;
     }
 
     .contact .section-heading h2 {
-
       color: white;
     }
 
     .contact .section-heading p {
-
-      color:
-        rgba(255,255,255,0.8);
+      color: rgba(255,255,255,0.8);
     }
 
     .contact-grid {
-
       display: grid;
-
-      grid-template-columns:
-        1fr 1fr;
-
+      grid-template-columns: 1fr 1fr;
       gap: 25px;
     }
 
     .contact-card {
-
-      background:
-        rgba(255,255,255,0.08);
-
+      background: rgba(255,255,255,0.08);
       padding: 30px;
-
       border-radius: 12px;
     }
 
     .contact-card h3 {
-
       color: #f1d48a;
-
       margin-bottom: 15px;
     }
 
     .contact-card p {
-
       margin-bottom: 8px;
     }
 
     .wa-button {
-
       display: inline-block;
-
       margin-top: 15px;
-
       background: #25d366;
-
       color: white;
-
       padding: 12px 22px;
-
       border-radius: 7px;
-
       font-weight: bold;
     }
 
-
-    /* =========================
-       FOOTER
-    ========================= */
-
     footer {
-
       background: #062e1d;
-
-      color:
-        rgba(255,255,255,0.75);
-
+      color: rgba(255,255,255,0.75);
       text-align: center;
-
       padding: 30px 20px;
-
       font-size: 13px;
     }
 
     footer strong {
-
       color: white;
     }
-
-
-    /* =========================
-       MOBILE
-    ========================= */
 
     @media(max-width:800px) {
 
       .navbar {
-
         flex-direction: column;
-
         padding: 13px 15px;
       }
 
       nav {
-
         justify-content: center;
-
         gap: 10px 13px;
       }
 
       nav a {
-
         font-size: 12px;
       }
 
       .hero {
-
         min-height: 570px;
       }
 
       .hero h1 {
-
         font-size: 31px;
       }
 
       .hero h2 {
-
         font-size: 18px;
       }
 
       .hero p {
-
         font-size: 15px;
       }
 
       .about-grid,
       .cards,
       .contact-grid {
-
         grid-template-columns: 1fr;
       }
 
       .activities {
-
         grid-template-columns: 1fr;
       }
 
       section {
-
         padding: 55px 17px;
       }
 
       .section-heading h2 {
-
         font-size: 27px;
       }
 
@@ -688,18 +464,11 @@
 
 </head>
 
-
 <body>
-
-
-<!-- =========================
-     HEADER
-========================= -->
 
 <header>
 
   <div class="navbar">
-
 
     <a href="index.html" class="brand">
 
@@ -721,22 +490,21 @@
 
     </a>
 
-
     <nav>
 
       <a href="index.html">
         Beranda
       </a>
 
-      <a href="profil">
+      <a href="profil.html">
         Profil
       </a>
 
-      <a href="paud">
+      <a href="paud.html">
         PAUD
       </a>
 
-      <a href="majelis">
+      <a href="majelis.html">
         Majelis Taklim
       </a>
 
@@ -751,6 +519,7 @@
       <a
         href="https://wa.me/6287821389514"
         target="_blank"
+        rel="noopener"
         class="nav-wa">
 
         WhatsApp
@@ -763,11 +532,6 @@
 
 </header>
 
-
-<!-- =========================
-     HERO
-========================= -->
-
 <section class="hero">
 
   <div class="hero-content">
@@ -776,16 +540,13 @@
       WEBSITE RESMI YAYASAN
     </span>
 
-
     <h1>
       Yayasan Saudatul Jamilah As Syuja'iyah
     </h1>
 
-
     <h2>
       Pendidikan • Keagamaan • Pengabdian Masyarakat
     </h2>
-
 
     <p>
       Membangun generasi yang berilmu,
@@ -794,17 +555,15 @@
       dan pembinaan keagamaan.
     </p>
 
-
     <div class="hero-buttons">
 
       <a
-        href="profil"
+        href="profil.html"
         class="btn btn-primary">
 
         Profil Yayasan
 
       </a>
-
 
       <a
         href="#lembaga"
@@ -820,15 +579,9 @@
 
 </section>
 
-
-<!-- =========================
-     TENTANG
-========================= -->
-
 <section id="tentang">
 
   <div class="container">
-
 
     <div class="section-heading">
 
@@ -848,9 +601,7 @@
 
     </div>
 
-
     <div class="about-grid">
-
 
       <div class="about-text">
 
@@ -859,7 +610,6 @@
           dan Keagamaan
         </h3>
 
-
         <p>
           Yayasan Saudatul Jamilah
           As Syuja'iyah menaungi
@@ -867,14 +617,12 @@
           keagamaan masyarakat.
         </p>
 
-
         <p>
           Yayasan beralamat di
           Kp. Lemah Nendeut (Wates)
           03/03, Desa Pancawati,
           Kecamatan Caringin, Bogor.
         </p>
-
 
         <p>
           Informasi sejarah, visi dan
@@ -884,9 +632,8 @@
           data resmi yayasan.
         </p>
 
-
         <a
-          href="profil"
+          href="profil.html"
           class="profile-button">
 
           Lihat Profil Yayasan →
@@ -895,9 +642,7 @@
 
       </div>
 
-
       <div class="about-box">
-
 
         <div>
 
@@ -910,7 +655,6 @@
           </span>
 
         </div>
-
 
         <div>
 
@@ -926,7 +670,6 @@
 
         </div>
 
-
         <div>
 
           <strong>
@@ -938,7 +681,6 @@
           </span>
 
         </div>
-
 
         <div>
 
@@ -952,7 +694,6 @@
 
         </div>
 
-
       </div>
 
     </div>
@@ -961,17 +702,11 @@
 
 </section>
 
-
-<!-- =========================
-     LEMBAGA
-========================= -->
-
 <section
   class="unit-section"
   id="lembaga">
 
   <div class="container">
-
 
     <div class="section-heading">
 
@@ -990,26 +725,19 @@
 
     </div>
 
-
     <div class="cards">
 
-
-      <!-- PAUD -->
-
       <a
-        href="paud"
+        href="paud.html"
         class="card">
-
 
         <div class="card-icon">
           🎓
         </div>
 
-
         <h3>
           PAUD Bahrul Ulum
         </h3>
-
 
         <p>
           Lembaga pendidikan anak
@@ -1018,31 +746,23 @@
           As Syuja'iyah.
         </p>
 
-
         <span class="card-link">
           Lihat Profil PAUD →
         </span>
 
-
       </a>
 
-
-      <!-- MAJELIS -->
-
       <a
-        href="majelis"
+        href="majelis.html"
         class="card">
-
 
         <div class="card-icon">
           🕌
         </div>
 
-
         <h3>
           Majelis Taklim Bahrul Ulum
         </h3>
-
 
         <p>
           Wadah pembinaan keagamaan,
@@ -1050,14 +770,11 @@
           penguatan silaturahmi.
         </p>
 
-
         <span class="card-link">
           Lihat Profil Majelis →
         </span>
 
-
       </a>
-
 
     </div>
 
@@ -1065,15 +782,9 @@
 
 </section>
 
-
-<!-- =========================
-     KEGIATAN
-========================= -->
-
 <section id="kegiatan">
 
   <div class="container">
-
 
     <div class="section-heading">
 
@@ -1092,9 +803,7 @@
 
     </div>
 
-
     <div class="activities">
-
 
       <div class="activity">
 
@@ -1114,7 +823,6 @@
 
       </div>
 
-
       <div class="activity">
 
         <div class="activity-icon">
@@ -1131,7 +839,6 @@
         </p>
 
       </div>
-
 
       <div class="activity">
 
@@ -1151,24 +858,17 @@
 
       </div>
 
-
     </div>
 
   </div>
 
 </section>
 
-
-<!-- =========================
-     KONTAK
-========================= -->
-
 <section
   class="contact"
   id="kontak">
 
   <div class="container">
-
 
     <div class="section-heading">
 
@@ -1187,9 +887,7 @@
 
     </div>
 
-
     <div class="contact-grid">
-
 
       <div class="contact-card">
 
@@ -1211,7 +909,6 @@
 
       </div>
 
-
       <div class="contact-card">
 
         <h3>
@@ -1224,10 +921,10 @@
           As Syuja'iyah.
         </p>
 
-
         <a
           href="https://wa.me/6287821389514"
           target="_blank"
+          rel="noopener"
           class="wa-button">
 
           Chat WhatsApp
@@ -1236,17 +933,11 @@
 
       </div>
 
-
     </div>
 
   </div>
 
 </section>
-
-
-<!-- =========================
-     FOOTER
-========================= -->
 
 <footer>
 
@@ -1260,13 +951,11 @@
 
   </p>
 
-
   <p>
     PAUD Bahrul Ulum
     •
     Majelis Taklim Bahrul Ulum
   </p>
-
 
   <p>
     Kp. Lemah Nendeut (Wates),
@@ -1275,6 +964,6 @@
 
 </footer>
 
-
 </body>
 </html>
+```
