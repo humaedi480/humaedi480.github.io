@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Yayasan Saudatul Jamilah As Syuja'iyah</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      color: #333;
+      background: #f7f9f7;
+    }
+
+    header {
+      background: #0f5132;
+      color: white;
+      padding: 18px 20px;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+
+    .header-inner {
+      max-width: 1100px;
+      margin: auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 20px;
+    }
+
+    .brand {
+      font-size: 18px;
+      font-weight: bold;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin-left: 18px;
+      font-size: 14px;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    .hero {
+      background: linear-gradient(135deg, #0f5132, #198754);
+      color: white;
+      text-align: center;
+      padding: 90px 20px;
+    }
+
+    .hero h1 {
+      font-size: 38px;
+      margin-bottom: 15px;
+    }
+
+    .hero p {
+      max-width: 700px;
+      margin: auto;
+      font-size: 18px;
+    }
+
+    .btn {
+      display: inline-block;
+      margin-top: 25px;
+      padding: 12px 22px;
+      background: white;
+      color: #0f5132;
+      text-decoration: none;
+      border-radius: 7px;
+      font-weight: bold;
+    }
+
+    section {
+      max-width: 1100px;
+      margin: auto;
+      padding: 65px 20px;
+    }
+
+    .section-title {
+      text-align: center;
+      margin-bottom: 35px;
+    }
+
+    .section-title h2 {
+      color: #0f5132;
+      font-size: 30px;
+      margin-bottom: 8px;
+    }
+
+    .about {
+      text-align: center;
+      max-width: 850px;
+      margin: auto;
+    }
+
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 25px;
+    }
+
+    .card {
+      background: white;
+      padding: 30px;
+      border-radius: 12px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+      text-align: center;
+    }
+
+    .card .icon {
+      font-size: 45px;
+      margin-bottom: 15px;
+    }
+
+    .card h3 {
+      color: #0f5132;
+      margin-bottom: 12px;
+      font-size: 23px;
+    }
+
+    .card a {
+      display: inline-block;
+      margin-top: 18px;
+      color: #0f5132;
+      font-weight: bold;
+      text-decoration: none;
+    }
+
+    .info {
+      background: #eaf4ee;
+    }
+
+    .contact-box {
+      background: white;
+      padding: 30px;
+      border-radius: 12px;
+      text-align: center;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+    }
+
+    .whatsapp {
+      display: inline-block;
+      margin-top: 20px;
+      padding: 13px 25px;
+      background: #198754;
+      color: white;
+      text-decoration: none;
+      border-radius: 7px;
+      font-weight: bold;
+    }
+
+    footer {
+      background: #0b3d26;
+      color: white;
+      text-align: center;
+      padding: 30px 20px;
+      font-size: 14px;
+    }
+
+    @media (max-width: 768px) {
+      .header-inner {
+        flex-direction: column;
+      }
+
+      nav {
+        text-align: center;
+      }
+
+      nav a {
+        margin: 0 7px;
+        font-size: 13px;
+      }
+
+      .hero {
+        padding: 65px 20px;
+      }
+
+      .hero h1 {
+        font-size: 28px;
+      }
+
+      .hero p {
+        font-size: 16px;
+      }
+
+      .cards {
+        grid-template-columns: 1fr;
+      }
+
+      section {
+        padding: 50px 18px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+<header>
+  <div class="header-inner">
+
+    <div class="brand">
+      Yayasan Saudatul Jamilah As Syuja'iyah
+    </div>
+
+    <nav>
+      <a href="#beranda">Beranda</a>
+      <a href="#yayasan">Yayasan</a>
+      <a href="#paud">PAUD</a>
+      <a href="#majelis">Majelis</a>
+      <a href="#kontak">Kontak</a>
+    </nav>
+
+  </div>
+</header>
+
+
+<section class="hero" id="beranda">
+
+  <h1>Yayasan Saudatul Jamilah As Syuja'iyah</h1>
+
+  <p>
+    Membangun generasi berilmu, berakhlak,
+    dan bermanfaat bagi masyarakat.
+  </p>
+
+  <a class="btn" href="#yayasan">
+    Mengenal Yayasan
+  </a>
+
+</section>
+
+
+<section id="yayasan">
+
+  <div class="section-title">
+    <h2>Tentang Yayasan</h2>
+    <p>Yayasan Saudatul Jamilah As Syuja'iyah</p>
+  </div>
+
+  <div class="about">
+
+    <p>
+      Yayasan Saudatul Jamilah As Syuja'iyah merupakan
+      lembaga yang menaungi kegiatan pendidikan dan
+      keagamaan masyarakat.
+    </p>
+
+    <br>
+
+    <p>
+      Yayasan beralamat di Kp. Lemah Nendeut (Wates)
+      03/03, Desa Pancawati, Kecamatan Caringin,
+      Bogor.
+    </p>
+
+    <br>
+
+    <p>
+      Ketua Yayasan: <strong>Nyai Jamilah</strong>
+    </p>
+
+  </div>
+
+</section>
+
+
+<section class="info">
+
+  <div class="section-title">
+    <h2>Lembaga di Bawah Yayasan</h2>
+    <p>Pendidikan dan pembinaan keagamaan</p>
+  </div>
+
+  <div class="cards">
+
+    <div class="card" id="paud">
+
+      <div class="icon">🎓</div>
+
+      <h3>PAUD Bahrul Ulum</h3>
+
+      <p>
+        Lembaga pendidikan anak usia dini
+        yang berada di bawah naungan
+        Yayasan Saudatul Jamilah As Syuja'iyah.
+      </p>
+
+      <p style="margin-top:15px;">
+        <strong>Kepala/Pengelola:</strong><br>
+        Siti Hikmatillah
+      </p>
+
+      <a href="#kontak">Informasi PAUD →</a>
+
+    </div>
+
+
+    <div class="card" id="majelis">
+
+      <div class="icon">🕌</div>
+
+      <h3>Majelis Taklim Bahrul Ulum</h3>
+
+      <p>
+        Wadah pembinaan keagamaan,
+        pendidikan masyarakat,
+        dan penguatan silaturahmi.
+      </p>
+
+      <p style="margin-top:15px;">
+        <strong>Ketua/Pengasuh:</strong><br>
+        Ahmad Abdunnasir, S.Pd
+      </p>
+
+      <a href="#kontak">Informasi Majelis →</a>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<section>
+
+  <div class="section-title">
+    <h2>Berita & Kegiatan</h2>
+    <p>Informasi kegiatan yayasan akan ditampilkan di sini.</p>
+  </div>
+
+  <div class="about">
+
+    <p>
+      Halaman berita dan dokumentasi kegiatan
+      akan dikembangkan pada tahap berikutnya.
+    </p>
+
+  </div>
+
+</section>
+
+
+<section id="kontak">
+
+  <div class="section-title">
+    <h2>Hubungi Kami</h2>
+    <p>Yayasan Saudatul Jamilah As Syuja'iyah</p>
+  </div>
+
+  <div class="contact-box">
+
+    <p>
+      📍 Kp. Lemah Nendeut (Wates) 03/03,
+      Desa Pancawati, Kecamatan Caringin,
+      Bogor
+    </p>
+
+    <p style="margin-top:12px;">
+      👤 Ketua Yayasan: Nyai Jamilah
+    </p>
+
+    <p style="margin-top:12px;">
+      📱 WhatsApp: 087821389514
+    </p>
+
+    <a
+      class="whatsapp"
+      href="https://wa.me/6287821389514"
+      target="_blank">
+      Hubungi via WhatsApp
+    </a>
+
+  </div>
+
+</section>
+
+
+<footer>
+
+  <p>
+    © 2026 Yayasan Saudatul Jamilah As Syuja'iyah
+  </p>
+
+  <p style="margin-top:8px;">
+    PAUD Bahrul Ulum • Majelis Taklim Bahrul Ulum
+  </p>
+
+</footer>
+
+</body>
+                                          </html>
